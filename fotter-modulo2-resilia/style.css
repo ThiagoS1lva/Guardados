@@ -1,9 +1,0 @@
-.mb-4 i{
-    transition: all ease-in-out 3s;
-}
-.mb-4 a:hover{
-    top: -3px;
-}
-.sec a:hover{
-    text-decoration: underline;
-}
