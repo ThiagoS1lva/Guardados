@@ -7,7 +7,7 @@ export default function InstaFeed() {
     const [feedList, setFeedList] = useState([])
 
     async function getInstaFeed() {
-        const token = process.env.INSTA_TOKEN;
+        const token = import.meta.env.VITE_INSTA_TOKEN;
         const fields = "media_url, media_type, permalink, album_id, caption"
         const url = `https://graph.instagram.com/me/media?access_token=${token}&fields=${fields}`
 
