@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    border: 1rem;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    text-align: center;
+}
+.item a{
+    display: flex;
+    height: 100%;
+}
+.item:hover {
+    filter: brightness(1.1);
+}
+
+.item img, video{
+ max-width: 100%;
+ max-height: 100%;
+ object-fit: cover;
+}
