@@ -34,3 +34,20 @@
     background-color: #000;
     color: #fff;
 }
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+    .row {
+        width: 100%;
+        flex-direction: column;
+    }
+    .col {
+        margin: 0 auto 6% auto;
+        width: 80%;
+    }
+    .col a {
+        font-size: 1.5em;
+    }
+}
