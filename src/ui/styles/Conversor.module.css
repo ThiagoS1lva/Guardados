@@ -6,9 +6,23 @@
 }
 
 .container h1 {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 2%;
+    margin-bottom: 2%;
     font-size: 3em;
+    text-align: center;
+    background: #2980B9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 1%;
+    border-radius: 10px;
+}
+.container h6 {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    color: black;
     text-align: center;
 }
 
@@ -62,6 +76,7 @@
     display: flex;
     box-shadow: 0px 5px 10px #2193b089;
     margin-top: 2%;
+    margin-bottom: 2%;
     border-radius: 5px;
     width: 10%;
     justify-content: center;
@@ -72,22 +87,64 @@
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #6dd5ed, #2193b0);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    transition:  all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
     align-items: center;
 }
+
 .download:hover {
     box-shadow: 0px 5px 10px #2193b0;
 }
+
 .download a {
+    text-align: center;
+    width: 100%;
     font-weight: bold;
     font-size: 1.2em;
     color: rgb(0, 0, 0);
 }
+
 .videoInfo {
     display: flex;
     flex-direction: column;
 }
-.videoInfo p {
+.videoInfo img {
+    object-fit: cover;
+}
+.info {
+    margin: 0 auto;
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+    margin-top: 2%;
+    flex-direction: column;
+}
+.info p {
     font-size: 1.2em;
     margin-bottom: 1em;
+}
+.title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media (max-width:600px) {
+    .container h1 {
+        font-size: 1.2em;
+    }
+    .container h6 {
+        font-size: 0.9em;
+        margin-top: 2%;
+        width: 90%;
+    }
+    .container form {
+        width: 90%;
+    }
+    .info p {
+        font-size: 1em;
+    }
+    .download {
+        width: 30%;
+        margin-top: 8%;
+    }
 }

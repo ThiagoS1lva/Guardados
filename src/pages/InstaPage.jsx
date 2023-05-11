@@ -1,5 +1,5 @@
-import InstaFeed from "../components/instafeed/InstaFeed";
-import Menu from "../components/Menu";
+import InstaFeed from "../ui/components/instafeed/InstaFeed";
+import Menu from "../ui/components/Menu";
 
 export default function InstaPage() {
     return (
