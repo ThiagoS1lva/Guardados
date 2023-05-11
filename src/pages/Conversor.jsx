@@ -23,7 +23,6 @@ export default function Conversor() {
             .then(response => {
                 setThumbnail(response.data.items[0].snippet.thumbnails.high.url)
                 setChannelName(response.data.items[0].snippet.channelTitle)
-                console.log(response)
             })
             .catch(error => console.error(error));
 
