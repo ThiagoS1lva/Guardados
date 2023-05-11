@@ -28,3 +28,15 @@
  max-height: 100%;
  object-fit: cover;
 }
+
+.carouselContainer {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .carouselImg {
+    height: 400px;
+    object-fit: cover;
+  }
+  
