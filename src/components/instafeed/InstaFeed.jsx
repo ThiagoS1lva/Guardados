@@ -1,6 +1,6 @@
 import axios from 'axios'; 
 import { useEffect, useState } from 'react';
-import styles from './InstaFeed.module.css'
+import styles from '../../styles/InstaFeed.module.css'
 
 export default function InstaFeed() {
     const [feedList, setFeedList] = useState([])
