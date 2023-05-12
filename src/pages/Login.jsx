@@ -1,17 +1,13 @@
 import Menu from '../ui/components/Menu'
 import styles from '../ui/styles/Login.module.css'
 import { GoogleLogin, GoogleOAuthProvider } from '@react-oauth/google'
-import { useContext, useEffect } from 'react'
+import { useContext } from 'react'
 import jwt_decode from 'jwt-decode'
 import { Context } from '../data/context/UserContext'
 
 export default function Login() {
     const { user, setUser } = useContext(Context)
     const clientID = import.meta.env.VITE_CLIENT_ID;
-
-    useEffect(() => {
-        console.log(user.picture)
-    }, [user])
 
     //Deslogar
     const deslogar = () => {
