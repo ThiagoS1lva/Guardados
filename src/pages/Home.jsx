@@ -13,6 +13,9 @@ export default function Home() {
                 <div className={styles.col}>
                     <Link to='/Conversor'>Conversor Youtube para MP3</Link>
                 </div>
+                <div className={styles.col}>
+                    <Link to="/Login">Login</Link>
+                </div>
             </div>
         </div>
     )

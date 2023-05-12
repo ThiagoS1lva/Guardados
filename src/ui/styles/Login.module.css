@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+    min-height: 80vh;
+}
+.container h1 {
+    font-size: 2.6em;
+}
+.googleBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+.userInfo h2 {
+    margin-bottom: 2%;
+}
+.userInfo img {
+    width: 25%;
+    margin: 0 auto 2% auto;
+    border-radius: 10px;
+}
+.userInfo button {
+    width: 23%;
+    margin: 2% auto 0 auto;
+    font-size: 1.2em;
+    height: 2.2em;
+    border: none;
+    background-color: #DC3545;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 150ms ease-in-out;
+}
+.userInfo button:hover {
+    background-color: #C82333;
+}
+@media (max-width: 768px) {
+    .container {
+        margin-top: 10%;
+    }
+    .userInfo {
+        width: 70%;
+    }
+    .userInfo h2 {
+        font-size: 2em;
+        margin-top: 5%;
+    }
+    .userInfo img {
+        width: 45%;
+    }
+    .userInfo button {
+        width: 40%;
+        margin-top: 5%;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .container {
+        margin-top: 20%;
+    }
+    .userInfo {
+        width: 90%;
+    }
+    .userInfo h2 {
+        font-size: 1.8em;
+        margin-top: 10%;
+    }
+    .userInfo img {
+        margin-top: 5%;
+        width: 50%;
+    }
+    .userInfo button {
+        width: 50%;
+        margin-top: 5%;
+    }
+}
