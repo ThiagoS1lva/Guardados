@@ -13,7 +13,6 @@ export default function InstaFeed() {
         try {
             const { data } = await axios.get(url);
             setFeedList(data.data)
-            console.log(data)
         } catch (error) {
             console.error(error);
         }
